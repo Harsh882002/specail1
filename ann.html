@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Anniversary Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        
+            background-color: pink;
+        }
+
+        
+        .card {
+            width: 90%;
+            max-width: 400px;
+            margin: 50px auto;
+            background-color: #0735b4;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .teddy-img {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #fbfafd;
+            font-weight: bold;
+            font-family:cursive;
+
+        }
+
+        p {
+            color: #faf5f5;
+            margin-bottom: 10px; /* Added margin to separate paragraphs */
+            display: none; /* Initially hide paragraphs */
+        }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 600px) {
+            .card {
+                width: 90%;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .card {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <img class="teddy-img" src="llu.jpg" alt="Teddy Bear">
+        <h1>Happy 1st Month Anniversary My Baccha 🌹💖</h1>
+        <p id="first-paragraph">Congratulations on another Month together.</p>
+        <p id="second-paragraph">🎉🌟 Happy 1 Month Love Anniversary, my darling! 🌹💖 Time flies when I'm with you, and every moment has been a treasure. Here's to countless more months filled with love, laughter, and unforgettable memories together. You mean the world to me, and I'm grateful for every second by your side. Here's to us, forever and always! 💑💕</p>
+    </div>
+
+    <script>
+        // Get references to the paragraphs
+        var firstParagraph = document.getElementById('first-paragraph');
+        var secondParagraph = document.getElementById('second-paragraph');
+
+        // Set time intervals to display paragraphs
+        setTimeout(function() {
+            firstParagraph.style.display = 'block';
+        }, 2000); // Display first paragraph after 1 second (1000 milliseconds)
+
+        setTimeout(function() {
+            secondParagraph.style.display = 'block';
+        }, 5000); // Display second paragraph after 3 seconds (3000 milliseconds)
+    </script>
+</body>
+
+</html>
